@@ -1,0 +1,10 @@
+Pessoa cod nome cpf                                 rua cidade estado   cep    complemento email telefone
+Person cod:integer name, IndividualTaxpayerRegistration, street, city, state, zipcode, complement, email, phone
+
+Recebedor quantidade familiar,        litro agua,          cesta basica,       telha,       medida
+Recipient familyquantity:integer, literofwater:integer, basicbasket:integer, tile:integer, measure
+
+Catastrofe cod nome, grau de emergencia
+Catastrophe cod:integer name, degreeofemergency:integer
+
+Ocorrencia id pessoa, id catastrofe, 
