@@ -1,10 +1,18 @@
-Pessoa cod nome cpf                                 rua cidade estado   cep    complemento email telefone
-Person cod:integer name, IndividualTaxpayerRegistration, street, city, state, zipcode, complement, email, phone
+rails _5.2_ new <RubyonRailsTrabFinal> -d postgresql
 
-Recebedor quantidade familiar,        litro agua,          cesta basica,       telha,       medida
-Recipient familyquantity:integer, literofwater:integer, basicbasket:integer, tile:integer, measure
+rails db:create
 
-Catastrofe cod nome, grau de emergencia
-Catastrophe cod:integer name, degreeofemergency:integer
+Pessoa codigo pessoa nome cpf                                 rua cidade estado   cep    complemento email telefone
+rails generate scaffold Person person_code:integer name identification_number street city state zip_code complement email phone:integer
 
-Ocorrencia id pessoa, id catastrofe, 
+Recebedor quantidade familiar,        litro agua,          cesta basica,       telha,       medida   unidade de medida
+rails generate scaffold Recipient family_quantity:integer liter_of_water:integer basic_basket:integer tile:integer measure unit_of_measurement
+
+Catastrofe cod Catastrophe nome, grau de emergencia
+rails generate scaffold Catastrophe catastrophe_code:integer name degree_of_emergency:integer
+
+Ocorrencia                           id pessoa, id catastrofe, 
+rails generate scaffold Occurrence occurrence_code:integer person_code:integer catastrophe_code:integer
+
+
+rails db:migrate
