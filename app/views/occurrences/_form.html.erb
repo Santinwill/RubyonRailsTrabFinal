@@ -1,0 +1,32 @@
+<%= form_with(model: occurrence, local: true) do |form| %>
+  <% if occurrence.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(occurrence.errors.count, "error") %> prohibited this occurrence from being saved:</h2>
+
+      <ul>
+      <% occurrence.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :occurrence_code %>
+    <%= form.number_field :occurrence_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :person_code %>
+    <%= form.number_field :person_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :catastrophe_code %>
+    <%= form.number_field :catastrophe_code %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

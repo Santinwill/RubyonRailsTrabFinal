@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  catastrophe_code: 1
+  name: MyString
+  degree_of_emergency: 1
+
+two:
+  catastrophe_code: 1
+  name: MyString
+  degree_of_emergency: 1

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  occurrence_code: 1
+  person_code: 1
+  catastrophe_code: 1
+
+two:
+  occurrence_code: 1
+  person_code: 1
+  catastrophe_code: 1

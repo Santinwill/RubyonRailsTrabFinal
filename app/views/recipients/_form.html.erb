@@ -1,0 +1,47 @@
+<%= form_with(model: recipient, local: true) do |form| %>
+  <% if recipient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(recipient.errors.count, "error") %> prohibited this recipient from being saved:</h2>
+
+      <ul>
+      <% recipient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :family_quantity %>
+    <%= form.number_field :family_quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :liter_of_water %>
+    <%= form.number_field :liter_of_water %>
+  </div>
+
+  <div class="field">
+    <%= form.label :basic_basket %>
+    <%= form.number_field :basic_basket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tile %>
+    <%= form.number_field :tile %>
+  </div>
+
+  <div class="field">
+    <%= form.label :measure %>
+    <%= form.text_field :measure %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unit_of_measurement %>
+    <%= form.text_field :unit_of_measurement %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
