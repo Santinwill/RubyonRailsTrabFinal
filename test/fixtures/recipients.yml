@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  family_quantity: 1
+  liter_of_water: 1
+  basic_basket: 1
+  tile: 1
+  measure: MyString
+  unit_of_measurement: MyString
+
+two:
+  family_quantity: 1
+  liter_of_water: 1
+  basic_basket: 1
+  tile: 1
+  measure: MyString
+  unit_of_measurement: MyString

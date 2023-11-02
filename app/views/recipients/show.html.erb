@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Family quantity:</strong>
+  <%= @recipient.family_quantity %>
+</p>
+
+<p>
+  <strong>Liter of water:</strong>
+  <%= @recipient.liter_of_water %>
+</p>
+
+<p>
+  <strong>Basic basket:</strong>
+  <%= @recipient.basic_basket %>
+</p>
+
+<p>
+  <strong>Tile:</strong>
+  <%= @recipient.tile %>
+</p>
+
+<p>
+  <strong>Measure:</strong>
+  <%= @recipient.measure %>
+</p>
+
+<p>
+  <strong>Unit of measurement:</strong>
+  <%= @recipient.unit_of_measurement %>
+</p>
+
+<%= link_to 'Edit', edit_recipient_path(@recipient) %> |
+<%= link_to 'Back', recipients_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Catastrophe code:</strong>
+  <%= @catastrophe.catastrophe_code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @catastrophe.name %>
+</p>
+
+<p>
+  <strong>Degree of emergency:</strong>
+  <%= @catastrophe.degree_of_emergency %>
+</p>
+
+<%= link_to 'Edit', edit_catastrophe_path(@catastrophe) %> |
+<%= link_to 'Back', catastrophes_path %>
