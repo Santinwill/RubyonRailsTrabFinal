@@ -16,3 +16,9 @@ rails generate scaffold Occurrence occurrence_code:integer person_code:integer c
 
 
 rails db:migrate
+
+rails g migration AddCatastrophePerson catastrophe_person:references
+
+rails g migration AddCatastropheRecipient catastrophe_recipient:references
+
+rails g migration AddPersonRecipient person_recipient:references

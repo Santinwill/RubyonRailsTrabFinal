@@ -1,5 +1,6 @@
 class PeopleController < ApplicationController
   before_action :set_person, only: %i[ show edit update destroy ]
+  before_action :set_catastrophe_options, only: %i[ create new edit update ]
 
   # GET /people or /people.json
   def index
@@ -62,6 +63,10 @@ class PeopleController < ApplicationController
     def set_person
       @person = Person.find(params[:id])
     end
+
+    def set_catastrophe_options
+      @set_catastrophe_options = Catastrophe.all.pluck(:name, :id)
+    end  
 
     # Only allow a list of trusted parameters through.
     def person_params
