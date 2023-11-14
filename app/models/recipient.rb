@@ -1,4 +1,4 @@
 class Recipient < ApplicationRecord
-    belongs_to :catastrophes
-    has_many :person
+    belongs_to :catastrophe
+    has_many :people
 end

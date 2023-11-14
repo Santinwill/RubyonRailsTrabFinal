@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 2023_11_02_181144) do
     t.integer "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "catastrophe_id"
+    t.index ["catastrophe_id"], name: "index_people_on_catastrophe_id"
   end
 
   create_table "recipients", force: :cascade do |t|
@@ -55,6 +57,13 @@ ActiveRecord::Schema.define(version: 2023_11_02_181144) do
     t.string "unit_of_measurement"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "catastrophe_id"
+    t.bigint "people_id"
+    t.index ["catastrophe_id"], name: "index_recipients_on_catastrophe_id"
+    t.index ["people_id"], name: "index_recipients_on_people_id"
   end
 
+  add_foreign_key "people", "catastrophes"
+  add_foreign_key "recipients", "catastrophes"
+  add_foreign_key "recipients", "people", column: "people_id"
 end
