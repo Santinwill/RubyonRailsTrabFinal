@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :people_id %>
+    <%= form.select("people_id", Person.all.collect {|s| [s.name, s.id]}, {include_blank: 'Select...'}) %>
+  </div>
+
+  <div class="field">
     <%= form.label :family_quantity %>
     <%= form.number_field :family_quantity %>
   </div>

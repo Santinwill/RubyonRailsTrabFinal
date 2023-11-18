@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Person Id</th>
       <th>Family quantity</th>
       <th>Liter of water</th>
       <th>Basic basket</th>
@@ -18,6 +19,7 @@
   <tbody>
     <% @recipients.each do |recipient| %>
       <tr>
+        <td><%= recipient.people_id %></td>
         <td><%= recipient.family_quantity %></td>
         <td><%= recipient.liter_of_water %></td>
         <td><%= recipient.basic_basket %></td>

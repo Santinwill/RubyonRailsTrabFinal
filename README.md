@@ -58,6 +58,11 @@ rails s = rails server: usado para iniciar o servidor de desenvolvimento
 -e (development, test, production): estamos instruindo o servidor a iniciar no ambiente especificado
 
 
+## desativar servidor
+ctrl+C
+ou
+kill -9  $(cat tmp/pids/server.pid)
+
 # generators
 ## rails generate controller <pagina_inicial> ou rails g controller <pagina_inicial>
 rails: comando usado para interagir com o ambiente de desenvolvimento Ruby on Rails.

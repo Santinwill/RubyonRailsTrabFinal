@@ -1,5 +1,6 @@
 class RecipientsController < ApplicationController
   before_action :set_recipient, only: %i[ show edit update destroy ]
+  before_action :set_people_options, only: %i[ create new edit update ]
 
   # GET /recipients or /recipients.json
   def index
@@ -63,8 +64,12 @@ class RecipientsController < ApplicationController
       @recipient = Recipient.find(params[:id])
     end
 
+    def set_people_options
+      @set_people_options = Person.all.pluck(:name, :id)
+    end      
+
     # Only allow a list of trusted parameters through.
     def recipient_params
-      params.require(:recipient).permit(:family_quantity, :liter_of_water, :basic_basket, :tile, :measure, :unit_of_measurement)
+      params.require(:recipient).permit(:family_quantity, :liter_of_water, :basic_basket, :tile, :measure, :unit_of_measurement, :people_id)
     end
 end
