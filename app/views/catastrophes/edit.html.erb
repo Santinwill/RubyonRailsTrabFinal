@@ -1,6 +1,13 @@
-<h1>Editing Catastrophe</h1>
+<div class="container">
+    <h3>Editing Catastrophe</h1>
 
-<%= render 'form', catastrophe: @catastrophe %>
-
-<%= link_to 'Show', @catastrophe %> |
-<%= link_to 'Back', catastrophes_path %>
+    <%= render 'form', catastrophe: @catastrophe %>
+    <div class="row">
+        <div class="col s6">
+            <p><%= button_to 'Show', @catastrophe, method: :get %></p>
+        </div>
+        <div class="col s6 right-align">
+            <p><%= button_to 'Back', catastrophes_path, method: :get%></p>
+        </div>
+    </div>
+</div>

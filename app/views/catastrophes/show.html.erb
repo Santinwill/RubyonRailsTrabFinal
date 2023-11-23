@@ -1,20 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Catastrophe code:</strong>
-  <%= @catastrophe.catastrophe_code %>
-</p>
+  <p>
+    <strong>Catastrophe code:</strong>
+    <%= @catastrophe.catastrophe_code %>
+  </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @catastrophe.name %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @catastrophe.name %>
+  </p>
 
-<p>
-  <strong>Degree of emergency:</strong>
-  <%= @catastrophe.degree_of_emergency %>
-</p>
+  <p>
+    <strong>Degree of emergency:</strong>
+    <%= @catastrophe.degree_of_emergency %>
+  </p>
 
-<%= link_to 'Edit', edit_catastrophe_path(@catastrophe) %> |
-<%= link_to 'Back', catastrophes_path %> |
-<%= link_to "New Person", "/people/new" %>
+  <div class="row">
+    <div class="col s1">
+      <p><%= button_to 'Edit', edit_catastrophe_path(@catastrophe), method: :get  %></p>
+    </div>
+    <div class="col s5">
+      <p><%= button_to "New Person", "/people/new", method: :get  %></p>
+    </div>
+    <div class="col s6 right-align">
+      <p><%= button_to 'Back', catastrophes_path, method: :get %></p>
+    </div>
+  </div>
+</div>

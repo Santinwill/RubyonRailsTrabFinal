@@ -1,31 +1,34 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<h1>Catastrophes</h1>
+  <h3>Catastrophes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Catastrophe code</th>
-      <th>Name</th>
-      <th>Degree of emergency</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @catastrophes.each do |catastrophe| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= catastrophe.catastrophe_code %></td>
-        <td><%= catastrophe.name %></td>
-        <td><%= catastrophe.degree_of_emergency %></td>
-        <td><%= link_to 'Show', catastrophe %></td>
-        <td><%= link_to 'Edit', edit_catastrophe_path(catastrophe) %></td>
-        <td><%= link_to 'Destroy', catastrophe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Catastrophe code</th>
+        <th>Name</th>
+        <th>Degree of emergency</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @catastrophes.each do |catastrophe| %>
+        <tr>
+          <td><%= catastrophe.catastrophe_code %></td>
+          <td><%= catastrophe.name %></td>
+          <td><%= catastrophe.degree_of_emergency %></td>
+          <td><%= button_to 'Show', catastrophe, method: :get %></td>
+          <td><%= button_to 'Edit', edit_catastrophe_path(catastrophe), method: :get  %></td>
+          <td><%= button_to 'Destroy', catastrophe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Catastrophe', new_catastrophe_path %>
+  <br>
+  <p>
+    <%= button_to 'New Catastrophe', new_catastrophe_path, method: :get %>
+  </p>
+</div>

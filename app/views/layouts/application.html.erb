@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ProjetoFinal</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>ProjetoFinal</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
 
-  <body>
-  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body style="background-color: #ADD8E6; display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
+  <nav style="background-color: #F57B0A; position: fixed; top: 0; width: 100%; z-index: 1000;">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="brand-logo right"><%= image_tag('defesaCivil.png', size: '65x65', alt: 'Logo') %></a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a><%= link_to "Catastrophes", "/catastrophes", method: :get  %></a></li>
+          <li><a><%= link_to "Person", "/people", method: :get  %></a></li>
+          <li><a><%= link_to "Recipients", "/recipients", method: :get  %></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="flex: 1; overflow-y: auto; padding: 20px; margin-top: 60px;">
     <%= yield %>
+  </div>
 
-
-  </body>
+  <footer class="page-footer" style="background-color: #F57B0A;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/defesacivilchapeco/">Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://api.whatsapp.com/message/PKPLO7FDL4IOP1?autoload=1&app_absent=0">Whatsapp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2023 Copyright Text
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
