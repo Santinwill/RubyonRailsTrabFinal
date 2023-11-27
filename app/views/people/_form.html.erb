@@ -63,7 +63,7 @@
 
   <div class="field">
     <%= form.label :catastrophe_id %>
-    <%= form.select("catastrophe_id", Catastrophe.all.collect {|s| [s.name, s.id]}, {include_blank: 'Select...'}) %>
+    <%= form.select("catastrophe_id", Catastrophe.all.collect {|s| [s.name, s.id]}, {include_blank: 'Select...'}, {:class=> "input-field col s12"}) %>
   </div>
 
   <div class="actions">

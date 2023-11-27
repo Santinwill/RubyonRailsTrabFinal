@@ -14,6 +14,12 @@
   <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
 </head>
 
+<script>
+  $(document).ready(function() {
+    $('select').formSelect();
+  });
+</script>
+
 <body style="background-color: #ADD8E6; display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
   <nav style="background-color: #F57B0A; position: fixed; top: 0; width: 100%; z-index: 1000;">
     <div class="container">

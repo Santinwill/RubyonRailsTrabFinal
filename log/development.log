@@ -7186,3 +7186,1451 @@ Processing by CatastrophesController#index as HTML
 Completed 200 OK in 107ms (Views: 96.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 10.0.2.2 at 2023-11-23 23:42:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by CatastrophesController#index as HTML
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (3.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 2086ms (Views: 2014.5ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-23 23:42:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"jOo7iT3HiTGAMTNPFFKGwarQEwhxEae2+ZvrIx6iWGpRar8NxDw9uvCsHTNWeHloC4I1YAmOyW6tH4yPsyygZQ=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.5ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 189ms (Views: 105.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-23 23:42:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.5ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (92.8ms)
+  Rendered people/new.html.erb within layouts/application (121.8ms)
+Completed 200 OK in 207ms (Views: 190.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-23 23:43:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Parameters: {"authenticity_token"=>"FJJUuO6WaZYhwd1YTkerOGizpKYLmIhFgaqVXZuM1i7JEtA8F23dHVFc8yQMbVSRyeGCznMH5p3VLvLxNgIuIQ=="}
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (1.5ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 93ms (Views: 72.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/recipients/new" for 10.0.2.2 at 2023-11-23 23:43:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  Rendering recipients/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/recipients/_form.html.erb:16
+  Rendered recipients/_form.html.erb (8.0ms)
+  Rendered recipients/new.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 140ms (Views: 114.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-11-27 22:48:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by CatastrophesController#index as HTML
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (2.8ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 941ms (Views: 867.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/catastrophes/new" for 10.0.2.2 at 2023-11-27 22:48:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#new as HTML
+  Rendering catastrophes/new.html.erb within layouts/application
+  Rendered catastrophes/_form.html.erb (114.7ms)
+  Rendered catastrophes/new.html.erb within layouts/application (142.0ms)
+Completed 200 OK in 201ms (Views: 185.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:48:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"OawfnLHC/TEmHP+jKm36RceZHV83g/mmAVuZslDvH+aCIeFGHKCStBeSfDr8GjrM9axwUVhp7KRlL3NNnWSznw=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.6ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 168ms (Views: 118.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 22:48:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (12.2ms)
+  Rendered people/new.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 95ms (Views: 80.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 22:50:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:67
+  Rendered people/_form.html.erb (32.6ms)
+  Rendered people/new.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 366ms (Views: 316.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 22:52:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (32.3ms)
+  Rendered people/new.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 360ms (Views: 311.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:52:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 65ms (Views: 59.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:52:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 22:52:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.0ms)
+  Rendered people/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 53ms (Views: 46.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:54:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"pnrG6u+Ss5b+AyYq1LhYjOACkfyfyHJOE31Jk34D7qYd9zgwQvDcE8+NpbMCz5gF0jf88vAiZ0x3CaNss4hC3w=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 22:54:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Parameters: {"authenticity_token"=>"74y+bcONZQm3VG1jgiZeAIO2irvLck0YFZLeN4kqff9UAUC3bu8KjIba7vpUUZ6JsYPntaSYWBpx5jTIRKHRhg=="}
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (1.7ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 149ms (Views: 111.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:54:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"qapoXK7DN/mLOmm8YzBYeVJcIAM77tX1BnH08pQZID0SJ5aGA6FYfLq06iW1R5jwYGlNDVQEwPdiBR4NWZKMRA=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 22:54:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.3ms)
+  Rendered people/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 59ms (Views: 45.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 22:55:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Parameters: {"authenticity_token"=>"leLZrJmyNueQHfMXjBRsEQdFqGkBFewoUwbR8VDAlvQubyd2NNBZYqGTcI5aY6yYNXDFZ27/+So3cjsOnUs6jQ=="}
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (0.3ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:55:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"2rKcJYRv6jvMUfS9xUYHgEeP628huEpEqnQakW1k0l5hP2L/KQ2Fvv3fdyQTMccJdbqGYU5SX0bOAPBuoO9+Jw=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 22:55:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.1ms)
+  Rendered people/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 68ms (Views: 57.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:55:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"02+HJWJMjlp048pfMGvddp6SHpEUSVtdMV3WXoJf4+po4nn/zy7h30VtScbmHB3/rKdzn3ujTl9VKTyhT9RPkw=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 41.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/1/edit" for 10.0.2.2 at 2023-11-27 22:55:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.5ms)
+  Rendered people/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 69ms (Views: 43.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 22:56:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"aVetW6n205B0kXqISawR2vpyM7OggWm1HQHx+wPqKCrS2lOBBJS8FUUf+RGf29FTyEdevc9rfLd5dRsEzmGEUw=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 22:56:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Parameters: {"authenticity_token"=>"hetwKXEZoNOF2PikRoG+MbAG4lUmDD81nJ95jVhwl98+Zo7z3HvPVrRWez2Q9n64gjOPW0nmKjf465Nylfs7pg=="}
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (0.3ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients/new" for 10.0.2.2 at 2023-11-27 22:56:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  Rendering recipients/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/recipients/_form.html.erb:16
+  Rendered recipients/_form.html.erb (5.8ms)
+  Rendered recipients/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 119ms (Views: 91.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 22:56:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"kTwXSmfyhsYzdBFv90tuohxnMg7dpRJoCn8b6GVlhIAqsemQypDpQwL6kvYhPK4rLlJfALJPB2puC/EXqO4o+Q=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 60ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 22:59:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"5l13XjmWlXUlARGQmJceAm90Gpva1aAESizbyZIACTtd0ImElPT68BSPkglO4N6LXUF3lbU/tQYuWDE2X4ulQg=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 76ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes/2/edit" for 10.0.2.2 at 2023-11-27 23:00:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT  "catastrophes".* FROM "catastrophes" WHERE "catastrophes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/catastrophes_controller.rb:63
+  Rendering catastrophes/edit.html.erb within layouts/application
+  Rendered catastrophes/_form.html.erb (2.4ms)
+  Rendered catastrophes/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 56ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes/3" for 10.0.2.2 at 2023-11-27 23:00:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT  "catastrophes".* FROM "catastrophes" WHERE "catastrophes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/catastrophes_controller.rb:63
+  Rendering catastrophes/show.html.erb within layouts/application
+  Rendered catastrophes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 48.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:00:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"piyeW/HEn8nw+UUq05PWQILW72rY+zyyycupAaDdVkAdoWCBXKbwTMF3xrMF5BbJsOOCZLcRKbCtv0P+bVb6OQ=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 70ms (Views: 66.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:00:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.8ms)
+  Rendered people/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 55ms (Views: 46.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:00:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"YhPui/vJ/JRIadL5fQS3HahxXJxER+htdMC3A/ZuKgXZnhBRVquTEXnnUWCrc3eUmkQxkiut/W8QtF38O+WGfA=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:01:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"WLxUGVbU64vgRFVZRcXK0ruUjyEINxU5McaljPZrzhnjMarD+7aEDtHK1sCTsgpbiaHiL2fdADtVsk9zO+BiYA=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:01:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"gRtH8L9d1nv4Gi/ONfS4W/S2agvj7fgheM8tpBIPTHs6lrkqEj+5/smUrFfjg3jSxoMHBYwH7SMcu8db34TgAg=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:01:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.3ms)
+  Rendered people/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:03:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.1ms)
+  Rendered people/new.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 88ms (Views: 83.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:05:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.7ms)
+  Rendered people/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 79ms (Views: 72.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:06:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.0ms)
+  Rendered people/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 59ms (Views: 48.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:06:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.5ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (6.1ms)
+  Rendered people/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 56ms (Views: 48.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:10:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.7ms)
+  Rendered people/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 93ms (Views: 75.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"cby/LKoFDgwQu65Mrh3wOogmJuoNZ8dnib0GeTUoyKHKMUH2B2dhiSE1LdV4ajCzuhNL5GKN0mXtyeyG+KNk2A=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:10:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.0ms)
+  Rendered people/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:14:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.5ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.5ms)
+  Rendered people/new.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 97ms (Views: 86.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:15:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.7ms)
+  Rendered people/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 58ms (Views: 44.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (32.1ms)
+  Rendered people/new.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 622ms (Views: 584.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.2ms)
+  Rendered people/new.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 128ms (Views: 121.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.4ms)
+  Rendered people/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 55ms (Views: 49.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.6ms)
+  Rendered people/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 56ms (Views: 49.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.6ms)
+  Rendered people/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 55ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.2ms)
+  Rendered people/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 51ms (Views: 45.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (7.5ms)
+  Rendered people/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 61ms (Views: 54.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.0ms)
+  Rendered people/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.7ms)
+  Rendered people/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 69ms (Views: 63.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:17:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.5ms)
+  Rendered people/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 74ms (Views: 52.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:18:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.5ms)
+  Rendered people/new.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 132ms (Views: 123.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:18:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.1ms)
+  Rendered people/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 109ms (Views: 97.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:19:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (7.5ms)
+  Rendered people/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 129ms (Views: 121.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:19:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (7.2ms)
+  Rendered people/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 82ms (Views: 75.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:19:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (6.9ms)
+  Rendered people/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 65ms (Views: 59.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:19:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (6.4ms)
+  Rendered people/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 118ms (Views: 107.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/people" for 10.0.2.2 at 2023-11-27 23:20:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wGzqV2gwkJQE09sSFxOpgcxvVoi0cGyCqSM4DifEIMB74RSNxVL/ETVdWIvBZGkI/lo7htuaeYDNV9Lx6k+MuQ==", "person"=>{"person_code"=>"109", "name"=>"will", "identification_number"=>"asdklas", "street"=>"asdas", "city"=>"", "state"=>"", "zip_code"=>"", "complement"=>"", "email"=>"asdasdasdasd", "phone"=>"", "catastrophe_id"=>"3"}, "commit"=>"Create Person"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/people_controller.rb:28
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT  "catastrophes".* FROM "catastrophes" WHERE "catastrophes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:28
+  [1m[36mPerson Create (3.8ms)[0m  [1m[32mINSERT INTO "people" ("person_code", "name", "identification_number", "street", "city", "state", "zip_code", "complement", "email", "created_at", "updated_at", "catastrophe_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["person_code", 109], ["name", "will"], ["identification_number", "asdklas"], ["street", "asdas"], ["city", ""], ["state", ""], ["zip_code", ""], ["complement", ""], ["email", "asdasdasdasd"], ["created_at", "2023-11-27 23:20:55.421158"], ["updated_at", "2023-11-27 23:20:55.421158"], ["catastrophe_id", 3]]
+  ↳ app/controllers/people_controller.rb:28
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/people_controller.rb:28
+Redirected to http://localhost:3000/people/2
+Completed 302 Found in 76ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/people/2" for 10.0.2.2 at 2023-11-27 23:20:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:21:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:21:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.4ms)
+  Rendered people/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 56ms (Views: 48.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/people" for 10.0.2.2 at 2023-11-27 23:21:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uhcu4DOWhx6vJ4zBZjJOU+dqKgQay7wkdBpJOwGYGhUb4SNOoWNHA552n5MsOtE5HFVHWfXn9E1ZEUqcWP9RMA==", "person"=>{"person_code"=>"65", "name"=>"santin", "identification_number"=>"57905060", "street"=>"ibirama", "city"=>"chapeco", "state"=>"sc", "zip_code"=>"8981042", "complement"=>"e", "email"=>"santin.pw@gmail.com", "phone"=>"4999999999", "catastrophe_id"=>""}, "commit"=>"Create Person"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/people_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/people_controller.rb:28
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.9ms)
+  Rendered people/new.html.erb within layouts/application (9.1ms)
+Completed 422 Unprocessable Entity in 61ms (Views: 52.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/people" for 10.0.2.2 at 2023-11-27 23:21:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9yVs/ymdhKZtho21sgTnl6pP4vKTnjFn+7GKO36OmP5MqJIlhP/rI1wIDixkcycemHqP/Px0JGWfxWDEswU0hw==", "person"=>{"person_code"=>"65", "name"=>"santin", "identification_number"=>"57905060", "street"=>"ibirama", "city"=>"chapeco", "state"=>"sc", "zip_code"=>"8981042", "complement"=>"e", "email"=>"santin.pw@gmail.com", "phone"=>"4999999999", "catastrophe_id"=>"4"}, "commit"=>"Create Person"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/people_controller.rb:28
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT  "catastrophes".* FROM "catastrophes" WHERE "catastrophes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:28
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/people_controller.rb:28
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::RangeError (4999999999 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/people_controller.rb:28:in `block in create'
+app/controllers/people_controller.rb:27:in `create'
+Started GET "/people/2" for 10.0.2.2 at 2023-11-27 23:22:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.8ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 40.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipients/new" for 10.0.2.2 at 2023-11-27 23:22:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  Rendering recipients/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/recipients/_form.html.erb:16
+  Rendered recipients/_form.html.erb (4.3ms)
+  Rendered recipients/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 74ms (Views: 55.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/recipients/new" for 10.0.2.2 at 2023-11-27 23:22:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  Rendering recipients/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/recipients/_form.html.erb:16
+  Rendered recipients/_form.html.erb (3.9ms)
+  Rendered recipients/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 51ms (Views: 45.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/recipients" for 10.0.2.2 at 2023-11-27 23:23:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ld1+7MpCsxLw39XSv2qfNcfPy7gnj4WtGSyUVixaVe6WUIA2ZyDcl8FRVktpHV+89fqmtkhlkK99WH6p4dH5lw==", "recipient"=>{"people_id"=>"2", "family_quantity"=>"3", "liter_of_water"=>"10", "basic_basket"=>"3", "tile"=>"123", "measure"=>"90", "unit_of_measurement"=>"un"}, "commit"=>"Create Recipient"}
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipients_controller.rb:28
+  [1m[36mRecipient Create (6.6ms)[0m  [1m[32mINSERT INTO "recipients" ("family_quantity", "liter_of_water", "basic_basket", "tile", "measure", "unit_of_measurement", "created_at", "updated_at", "people_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["family_quantity", 3], ["liter_of_water", 10], ["basic_basket", 3], ["tile", 123], ["measure", "90"], ["unit_of_measurement", "un"], ["created_at", "2023-11-27 23:23:14.125868"], ["updated_at", "2023-11-27 23:23:14.125868"], ["people_id", 2]]
+  ↳ app/controllers/recipients_controller.rb:28
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipients_controller.rb:28
+Redirected to http://localhost:3000/recipients/1
+Completed 302 Found in 21ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/recipients/1" for 10.0.2.2 at 2023-11-27 23:23:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipient Load (0.3ms)[0m  [1m[34mSELECT  "recipients".* FROM "recipients" WHERE "recipients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipients_controller.rb:64
+  Rendering recipients/show.html.erb within layouts/application
+  Rendered recipients/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 23:23:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (0.3ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:23:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"AY87Txw4iMUf4ysLLwV1pw4HbwfTgASDnID3SIHQaZa6AsWVsVrnQC5tqJL5crUuPDICCbxqEYH49B23TFvF7w=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 61ms (Views: 54.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:23:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"flbVX+0pIZlLBS6LU5dRUTbvDqHc1qTs1NRjn50dM5vF2yuFQEtOHHqLrRKF4JHYBNpjr7M8se6woIlgUJaf4g=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 93ms (Views: 78.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:23:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.3ms)
+  Rendered people/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 70ms (Views: 47.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:23:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.8ms)
+  Rendered people/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 74ms (Views: 68.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:24:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"TGsW7C73K73DhUStfYl4vNl3bhvX1n6e6PK6W+rbtED35ug2g5VEOPILxzSr/rg160IDFbg8a5yMhlCkJ1AYOQ=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 88ms (Views: 83.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:24:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"yLzC4dhvX3bmUs5k4GHbEb9yOROu2+9bZoDkq2SohX5zMTw7dQ0w89fcTf02FhuYjUdUHcEx+lkC9A5UqSMpBw=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/new" for 10.0.2.2 at 2023-11-27 23:24:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/new.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.7ms)
+  Rendered people/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 51ms (Views: 44.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:28:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"yLzC4dhvX3bmUs5k4GHbEb9yOROu2+9bZoDkq2SohX5zMTw7dQ0w89fcTf02FhuYjUdUHcEx+lkC9A5UqSMpBw=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/1/edit" for 10.0.2.2 at 2023-11-27 23:28:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.5ms)
+  Rendered people/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 70ms (Views: 47.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/people/1/edit" for 10.0.2.2 at 2023-11-27 23:29:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (6.1ms)
+  Rendered people/edit.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 88ms (Views: 62.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:30:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"Y6UVEz3Elcbv6SSeQvZvzciR/Ye1gyFnN3uwPZrhz+HYKOvJkKb6Q95npweUga9E+qSQidppNGVTD1rCV2pjmA=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:30:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"a4C8YdVzybfBkDkl1vbA7NfrN5hXR5VndqgvOYxjMxXQDUK7eBGmMvAeurwAgQBl5d5aljitgGUS3MXGQeifbA=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 23:30:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Parameters: {"authenticity_token"=>"Xs2MGZSi4hdrrxIflC3vT1kEbMb4QGy480gyXSK3zq3lQHLDOcCNklohkYZCWi/GazEByJeqebqXPNii7zxi1A=="}
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (0.3ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients/1" for 10.0.2.2 at 2023-11-27 23:30:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipient Load (0.5ms)[0m  [1m[34mSELECT  "recipients".* FROM "recipients" WHERE "recipients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipients_controller.rb:64
+  Rendering recipients/show.html.erb within layouts/application
+  Rendered recipients/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 23:30:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (0.3ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients/1/edit" for 10.0.2.2 at 2023-11-27 23:30:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipient Load (0.5ms)[0m  [1m[34mSELECT  "recipients".* FROM "recipients" WHERE "recipients"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recipients_controller.rb:64
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  Rendering recipients/edit.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/recipients/_form.html.erb:16
+  Rendered recipients/_form.html.erb (4.3ms)
+  Rendered recipients/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 82ms (Views: 56.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 23:30:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (0.3ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 48ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipients/new" for 10.0.2.2 at 2023-11-27 23:30:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  Rendering recipients/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/recipients/_form.html.erb:16
+  Rendered recipients/_form.html.erb (3.5ms)
+  Rendered recipients/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 50ms (Views: 43.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipients/new" for 10.0.2.2 at 2023-11-27 23:30:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#new as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "people"."name", "people"."id" FROM "people"[0m
+  ↳ app/controllers/recipients_controller.rb:68
+  Rendering recipients/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/recipients/_form.html.erb:16
+  Rendered recipients/_form.html.erb (3.6ms)
+  Rendered recipients/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 53ms (Views: 47.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:30:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"/AbDX7a6FpIYVeWEoDoNTojwakB7o93ZYEOc5BC5nQBHiz2FG9h5FynbZh12Tc3HusUHThRJyNsEN3Yb3TIxeQ=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 54ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:32:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"7UtTZThIbMGCwP7HHigRaAHrcI4E0aCmLdHne2M9b41Wxq2/lSoDRLNOfV7IX9HhM94dgGs7taRJpQ2ErrbD9A=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 117ms (Views: 110.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/1" for 10.0.2.2 at 2023-11-27 23:33:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 81ms (Views: 56.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:33:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (1.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 42.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/people/2" for 10.0.2.2 at 2023-11-27 23:33:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 43.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people/2" for 10.0.2.2 at 2023-11-27 23:34:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 50.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:34:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"R2zd6XUHUWi6Iqdnsz0OflVt09gsUTgfgsiUkXm8Sar84SMz2GU+7YusJP5lSs73Z1i+1kO7LR3mvH5utDfl0w=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes/4/edit" for 10.0.2.2 at 2023-11-27 23:34:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCatastrophe Load (0.4ms)[0m  [1m[34mSELECT  "catastrophes".* FROM "catastrophes" WHERE "catastrophes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/catastrophes_controller.rb:63
+  Rendering catastrophes/edit.html.erb within layouts/application
+  Rendered catastrophes/_form.html.erb (1.8ms)
+  Rendered catastrophes/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 68ms (Views: 48.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:35:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"Z2S/LFEXqT+5NJEvVCHVeg6jK8KIa3uXBi5q2B9a3vjc6UH2/HXGuoi6EraCVhXzPJZGzOeBbpViWoAn0tFygQ=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 53ms (Views: 45.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/1/edit" for 10.0.2.2 at 2023-11-27 23:35:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (4.3ms)
+  Rendered people/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/people/1/edit" for 10.0.2.2 at 2023-11-27 23:35:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.7ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (6.4ms)
+  Rendered people/edit.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 73ms (Views: 67.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:35:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"Y0hmf5MN1dp9ZfI78RnPuVpbKrydMjhqTTAq558gWmjYxZilPm+6X0zrcaInbg8waG5HsvLYLWgpRMAYUqv2EQ=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes/3/edit" for 10.0.2.2 at 2023-11-27 23:35:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT  "catastrophes".* FROM "catastrophes" WHERE "catastrophes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/catastrophes_controller.rb:63
+  Rendering catastrophes/edit.html.erb within layouts/application
+  Rendered catastrophes/_form.html.erb (1.7ms)
+  Rendered catastrophes/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 58ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes/3/edit" for 10.0.2.2 at 2023-11-27 23:35:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCatastrophe Load (0.2ms)[0m  [1m[34mSELECT  "catastrophes".* FROM "catastrophes" WHERE "catastrophes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/catastrophes_controller.rb:63
+  Rendering catastrophes/edit.html.erb within layouts/application
+  Rendered catastrophes/_form.html.erb (1.7ms)
+  Rendered catastrophes/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 72ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:35:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"X9mtrkUs+34VThcTPx8S5ejdri+Xcrwl7yztPeF1MAjkVFN06E6U+yTAlIrpaNJs2ujDIfiYqSeLWAfCLP6ccQ=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:35:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"u4ZRBG80rK85f9kkuAm/tgOOv+t9JnC+TTahgUwiV3QAC6/ewlbDKgjxWr1ufn8/MbvS5RLMZbwpQkt+gan7DQ=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:24
+  Rendered people/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/1/edit" for 10.0.2.2 at 2023-11-27 23:35:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.5ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.7ms)
+  Rendered people/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 56ms (Views: 47.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/people/1/edit" for 10.0.2.2 at 2023-11-27 23:37:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (1.0ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (8.5ms)
+  Rendered people/edit.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 94ms (Views: 85.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:37:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"7HiClGftz1pRYv30YHf9RQj1X+5Ssvo3zkyApu+4RfxX9XxOyo+g32Dsfm22AD3MOsAy4D1Y7zWqOGpZIjPphQ=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:25
+  Rendered people/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:37:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Parameters: {"authenticity_token"=>"Wle5lJh4qPorDjAPBzSG/iKXTDaXKstxH9a6QjJAqynh2kdONRrHfxqAs5bRQ0Z3EKIhOPjA3nN7olC9/8sHUA=="}
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 85ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/catastrophes" for 10.0.2.2 at 2023-11-27 23:38:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CatastrophesController#index as HTML
+  Rendering catastrophes/index.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/catastrophes/index.html.erb:17
+  Rendered catastrophes/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 69ms (Views: 47.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 10.0.2.2 at 2023-11-27 23:38:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#index as HTML
+  Parameters: {"authenticity_token"=>"vC528u3598nGp5WHqYcEFlEd4BI9NzaFvwSqrwEJqKkHo4goQJuYTPcpFh5/8MSfYyiNHFLdI4fbcEBQzIIE0A=="}
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:25
+  Rendered people/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 50ms (Views: 43.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people/1" for 10.0.2.2 at 2023-11-27 23:40:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/2/edit" for 10.0.2.2 at 2023-11-27 23:40:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/people_controller.rb:64
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "catastrophes"."name", "catastrophes"."id" FROM "catastrophes"[0m
+  ↳ app/controllers/people_controller.rb:68
+  Rendering people/edit.html.erb within layouts/application
+  [1m[36mCatastrophe Load (0.3ms)[0m  [1m[34mSELECT "catastrophes".* FROM "catastrophes"[0m
+  ↳ app/views/people/_form.html.erb:66
+  Rendered people/_form.html.erb (5.8ms)
+  Rendered people/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 56ms (Views: 49.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipients" for 10.0.2.2 at 2023-11-27 23:40:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipientsController#index as HTML
+  Parameters: {"authenticity_token"=>"vC528u3598nGp5WHqYcEFlEd4BI9NzaFvwSqrwEJqKkHo4goQJuYTPcpFh5/8MSfYyiNHFLdI4fbcEBQzIIE0A=="}
+  Rendering recipients/index.html.erb within layouts/application
+  [1m[36mRecipient Load (0.5ms)[0m  [1m[34mSELECT "recipients".* FROM "recipients"[0m
+  ↳ app/views/recipients/index.html.erb:20
+  Rendered recipients/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 0.5ms)
+
+

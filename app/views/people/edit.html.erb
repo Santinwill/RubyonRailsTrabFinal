@@ -1,6 +1,13 @@
-<h1>Editing Person</h1>
+<div class="container">
+    <h3>Editing Person</h3>
 
-<%= render 'form', person: @person %>
-
-<%= link_to 'Show', @person %> |
-<%= link_to 'Back', people_path %>
+    <%= render 'form', person: @person %>
+    <div class="row">
+        <div class="col s6">
+            <p><%= button_to 'Show', @person, method: :get %></p>
+        </div>
+        <div class="col s6 right-align">
+            <p><%= button_to 'Back', people_path, method: :get %></p>
+        </div>
+    </div>
+</div>
