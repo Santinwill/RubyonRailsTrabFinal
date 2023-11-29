@@ -1,39 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<h1>Recipients</h1>
+  <h3>Recipients</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Person Id</th>
-      <th>Family quantity</th>
-      <th>Liter of water</th>
-      <th>Basic basket</th>
-      <th>Tile</th>
-      <th>Measure</th>
-      <th>Unit of measurement</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @recipients.each do |recipient| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= recipient.people_id %></td>
-        <td><%= recipient.family_quantity %></td>
-        <td><%= recipient.liter_of_water %></td>
-        <td><%= recipient.basic_basket %></td>
-        <td><%= recipient.tile %></td>
-        <td><%= recipient.measure %></td>
-        <td><%= recipient.unit_of_measurement %></td>
-        <td><%= link_to 'Show', recipient %></td>
-        <td><%= link_to 'Edit', edit_recipient_path(recipient) %></td>
-        <td><%= link_to 'Destroy', recipient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Person Id</th>
+        <th>Family quantity</th>
+        <th>Liter of water</th>
+        <th>Basic basket</th>
+        <th>Tile</th>
+        <th>Measure</th>
+        <th>Unit of measurement</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @recipients.each do |recipient| %>
+        <tr>
+          <td><%= recipient.people_id %></td>
+          <td><%= recipient.family_quantity %></td>
+          <td><%= recipient.liter_of_water %></td>
+          <td><%= recipient.basic_basket %></td>
+          <td><%= recipient.tile %></td>
+          <td><%= recipient.measure %></td>
+          <td><%= recipient.unit_of_measurement %></td>
+          <td><%= button_to 'Show', recipient, method: :get %></td>
+          <td><%= button_to 'Edit', edit_recipient_path(recipient), method: :get %></td>
+          <td><%= button_to 'Destroy', recipient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Recipient', new_recipient_path %>
+  <br>
+
+  <%= button_to 'New Recipient', new_recipient_path, method: :get %>
+</div >  

@@ -1,5 +1,7 @@
-<h1>New Recipient</h1>
-
-<%= render 'form', recipient: @recipient %>
-
-<%= link_to 'Back', recipients_path %>
+<div class="container">
+    <h3>New Recipient</h3>
+    <p><%= render 'form', recipient: @recipient %></p>
+    <div class="col s6 right-align">
+        <p><%= button_to 'Back', recipients_path, method: :get %></p>
+    </div>
+</div>

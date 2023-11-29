@@ -1,34 +1,40 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Family quantity:</strong>
-  <%= @recipient.family_quantity %>
-</p>
+  <p>
+    <strong>Family quantity:</strong>
+    <%= @recipient.family_quantity %>
+  </p>
 
-<p>
-  <strong>Liter of water:</strong>
-  <%= @recipient.liter_of_water %>
-</p>
+  <p>
+    <strong>Liter of water:</strong>
+    <%= @recipient.liter_of_water %>
+  </p>
 
-<p>
-  <strong>Basic basket:</strong>
-  <%= @recipient.basic_basket %>
-</p>
+  <p>
+    <strong>Basic basket:</strong>
+    <%= @recipient.basic_basket %>
+  </p>
 
-<p>
-  <strong>Tile:</strong>
-  <%= @recipient.tile %>
-</p>
+  <p>
+    <strong>Tile:</strong>
+    <%= @recipient.tile %>
+  </p>
 
-<p>
-  <strong>Measure:</strong>
-  <%= @recipient.measure %>
-</p>
+  <p>
+    <strong>Measure:</strong>
+    <%= @recipient.measure %>
+  </p>
 
-<p>
-  <strong>Unit of measurement:</strong>
-  <%= @recipient.unit_of_measurement %>
-</p>
-
-<%= link_to 'Edit', edit_recipient_path(@recipient) %> |
-<%= link_to 'Back', recipients_path %>
+  <p>
+    <strong>Unit of measurement:</strong>
+    <%= @recipient.unit_of_measurement %>
+  </p>
+  <div class="row">
+    <div class="col s1">
+      <p><%= button_to 'Edit', edit_recipient_path(@recipient), method: :get %></p>
+    </div>
+    <div class="right-align">
+      <p><%= button_to 'Back', recipients_path, method: :get %></p>
+  </div>
+</div>

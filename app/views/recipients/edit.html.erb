@@ -1,6 +1,13 @@
-<h1>Editing Recipient</h1>
+<div class="container">
+    <h3>Editing Recipient</h3>
 
-<%= render 'form', recipient: @recipient %>
-
-<%= link_to 'Show', @recipient %> |
-<%= link_to 'Back', recipients_path %>
+    <%= render 'form', recipient: @recipient %>
+    <div class="row">
+        <div class="col s6">
+            <p><%= button_to 'Show', @recipient, method: :get %></p>
+        </div>
+        <div class="col s6 right-align">
+            <p><%= button_to 'Back', recipients_path, method: :get %></p>
+        </div>
+    </div>
+</div>
