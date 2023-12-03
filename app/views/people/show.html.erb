@@ -53,13 +53,13 @@
 
   <div class="row">
     <div class="col s1">
-      <p><%= button_to 'Edit', edit_person_path(@person), method: :get  %></p>
+      <p><%= button_to 'Edit', edit_person_path(@person), method: :get, style: 'background-color: blue;', class: 'btn' %></p>
     </div>
-  </div>
-  <div class="col s5">
-    <p><%= button_to "New Recipients", "/recipients/new", method: :get  %></p>
-  </div>
-  <div class="col s6 right-align">  
-    <p><%= button_to 'Back', people_path, method: :get  %></p>
+    <div class="col s5">
+      <p><%= button_to "New Recipients", "/recipients/new", method: :get, style: 'background-color: blue;', class: 'btn' %></p>
+    </div>
+    <div class="col s6 right-align">  
+      <p><%= button_to 'Back', people_path, method: :get, style: 'background-color: blue;', class: 'btn' %></p>
+    </div>
   </div>
 </div>

@@ -3,6 +3,8 @@
 
   <h3>Recipients</h3>
 
+  <%= button_to 'New Recipient', new_recipient_path, method: :get, style: 'background-color: blue;', class: 'btn' %>
+
   <table>
     <thead>
       <tr>
@@ -27,15 +29,13 @@
           <td><%= recipient.tile %></td>
           <td><%= recipient.measure %></td>
           <td><%= recipient.unit_of_measurement %></td>
-          <td><%= button_to 'Show', recipient, method: :get %></td>
-          <td><%= button_to 'Edit', edit_recipient_path(recipient), method: :get %></td>
-          <td><%= button_to 'Destroy', recipient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= button_to 'Show', recipient, method: :get, style: 'background-color: blue;', class: 'btn' %></td>
+          <td><%= button_to 'Edit', edit_recipient_path(recipient), method: :get, style: 'background-color: blue;', class: 'btn' %></td>
+          <td><%= button_to 'Destroy', recipient, method: :delete, style: 'background-color: blue;', class: 'btn', data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 
   <br>
-
-  <%= button_to 'New Recipient', new_recipient_path, method: :get %>
 </div >  

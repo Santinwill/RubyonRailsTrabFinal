@@ -3,6 +3,10 @@
 
   <h3>Catastrophes</h3>
 
+  <p>
+    <%= button_to 'New Catastrophe', new_catastrophe_path, method: :get, style: 'background-color: blue;', class: 'btn' %>
+  </p>
+  
   <table>
     <thead>
       <tr>
@@ -19,16 +23,13 @@
           <td><%= catastrophe.catastrophe_code %></td>
           <td><%= catastrophe.name %></td>
           <td><%= catastrophe.degree_of_emergency %></td>
-          <td><%= button_to 'Show', catastrophe, method: :get %></td>
-          <td><%= button_to 'Edit', edit_catastrophe_path(catastrophe), method: :get  %></td>
-          <td><%= button_to 'Destroy', catastrophe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= button_to 'Show', catastrophe, method: :get, style: 'background-color: blue;', class: 'btn' %></td>
+          <td><%= button_to 'Edit', edit_catastrophe_path(catastrophe), method: :get, style: 'background-color: blue;', class: 'btn'  %></td>
+          <td><%= button_to 'Destroy', catastrophe, method: :delete, style: 'background-color: blue;', class: 'btn', data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 
   <br>
-  <p>
-    <%= button_to 'New Catastrophe', new_catastrophe_path, method: :get %>
-  </p>
 </div>
